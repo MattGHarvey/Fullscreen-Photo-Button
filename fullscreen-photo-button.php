@@ -2,7 +2,7 @@
 /*
 Plugin Name: Fullscreen Photo Button
 Description: Adds a fullscreen icon button above the first image in a post to display it in fullscreen.
-Version: 1.0
+Version: 1.1
 Author: Matt Harvey - [robotSprocket.com]
 */
 
@@ -41,6 +41,11 @@ JS
     }
     .fullscreen-icon-button:hover {
         background: rgba(0, 0, 0, 0.8);
+    }
+    @media (max-width: 768px) {
+        .fullscreen-icon-button {
+            display: none;
+        }
     }
 CSS
     );
